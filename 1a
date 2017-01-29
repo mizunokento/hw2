@@ -1,0 +1,24 @@
+function setup() {
+
+  createCanvas(400, 400);
+}
+
+      function draw(){
+           var smileX=mouseX;
+     var smileY=mouseY;
+     var faceR=200;
+     var eyeR=20;
+           var eyedistance=35
+
+           background(255);
+           ellipseMode(CENTER);
+           fill(255,255,0);
+           ellipse(smileX,smileY,faceR,faceR);
+           fill(0);
+           ellipse(smileX-eyedistance,smileY-eyedistance,eyeR,eyeR);
+          ellipse(smileX+eyedistance,smileY-eyedistance,eyeR,eyeR);
+           fill(0);
+           arc(smileX, smileY, faceR-20,faceR-20,2*PI,PI);
+
+
+      }
