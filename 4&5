@@ -1,0 +1,26 @@
+function setup() {
+
+  createCanvas(400, 400);
+}
+var x=100
+var y=100
+var delta=3
+      function draw(){
+          //var smileX=mouseX;
+          //var smileY=mouseY;
+
+     var faceR=30;
+               background(255);
+      ellipseMode(CENTER);
+      fill(255,255,0);
+      ellipse(x,y,faceR,faceR);
+          x += delta;
+    if (x > 380) {
+        delta *= -1;
+        x = 380;
+    } else if (x < 15) {
+        delta *= -1;
+        x = 15;
+    }
+
+               }
